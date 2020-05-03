@@ -17,6 +17,7 @@ pipeline {
 				//sh 'gradle build'
 				sh 'docker'
 				sh 'gradle docker --debug'
+				sh 'gradle dockerTagLatest'
             }
         }
         stage('compose'){
