@@ -1,0 +1,18 @@
+version: "3.7"
+networks:
+  ohinc-net:
+    name: ohinc-net
+    external: true
+
+services:
+  github-test:
+    image: ohinc/github-test:latest
+    user: root
+    restart: on-failure
+    ports:
+      - 8093:8086
+    networks:
+      ohinc-net:
+        ipv4_address: 172.30.0.4
+
+
