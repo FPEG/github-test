@@ -34,7 +34,7 @@ docker {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-	implementation 'org.springframework.boot:spring-boot-starter-consul-config'
+	implementation 'org.springframework.boot:spring-boot-starter-consul-configure'
 	implementation 'org.springframework.boot:spring-boot-starter-consul-discovery'
 	runtimeOnly 'org.postgresql:postgresql'
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
