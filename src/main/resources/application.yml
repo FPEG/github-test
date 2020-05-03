@@ -8,3 +8,6 @@ spring:
     platform: postgresql
     driverClassName: org.postgresql.Driver
     initialization-mode: always
+  jpa:
+    hibernate:
+      ddl-auto: update
